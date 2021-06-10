@@ -1,4 +1,4 @@
-const {translate} = require('./translate.js');
+const { translate } = require('./translate.js');
 
 describe('translate', () => {
     // strings that start with vowels
