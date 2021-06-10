@@ -2,44 +2,44 @@ const { translate } = require('./translate.js');
 
 describe('translate', () => {
     // strings that start with vowels
-    test('apple returns appleay', () => {
-        expect('apple').toEqual('appleay');
+    test('apple returns appleway', () => {
+        expect(translate('apple')).toBe('appleway');
     })
-    test('egg returns eggay', () => {
-        expect('egg').toEqual('eggay');
+    test('egg returns eggway', () => {
+        expect(translate('egg')).toBe('eggway');
     })
     // tests capital letters are converted to lower case
     test('ApPlE returns appleay', () => {
-        expect('ApPlE').toEqual('appleay');
+        expect(translate('ApPlE')).toBe('appleay');
     })
     test('EgG', () => {
-        expect('EgG').toEqual('eggay');
+        expect(translate('EgG')).toBe('eggay');
     })
     // test for the first letter being a consonant
     test('Cat returns atcay', () => {
-        expect('Cat').toEqual('atcay');
+        expect(translate('Cat')).toBe('atcay');
     })
     test('Bat returns atbay', () => {
-        expect('Bat').toEqual('atbay');
+        expect(translate('Bat')).toBe('atbay');
     })
     // test for the first two letters being a consonant
     test('shin returns inshay', () => {
-        expect('shin').toEqual('inshay');
+        expect(translate('shin')).toBe('inshay');
     })
     test('green to return ', () => {
-        expect('green').toEqual('eengray');
+        expect(translate('green')).toBe('eengray');
     })
     // test for the first three letters being consonants
     test('splice to return icesplay', () => {
-        expect('splice').toEqual('icesplay');
+        expect(translate('splice')).toBe('icesplay');
     })
     // test for first three letters being consonants and uppercase letters
     test('cHrIsT to return istchray', () => {
-        expect('cHrIsT').toEqual('istchray');
+        expect(translate('cHrIsT')).toBe('istchray');
     })
     // test for numbers to count as consonants
     test('fr4ak to return akfr4ay', () => {
-        expect('fr4ak').toEqual('akfr4ay');
+        expect(translate('fr4ak')).toBe('akfr4ay');
     })
 })
 
